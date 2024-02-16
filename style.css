@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.cont-header {
+    background: #e7ebdf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.cont-header header {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.cont-header header .logo a {
+    font-size: 20px;
+    color: #060606;
+    text-decoration: none;
+    font-family: 'Spectral', serif;
+}
+
+.cont-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.cont-header header nav ul li a {
+    font-size: 18px;
+    font-family: 'Spectral', serif;
+    color: #060606;
+    margin: 0 12px;
+    padding: 0;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.cont-header header nav ul li a:hover {
+    color: #dda43a;
+}
+
+.nav-responsive {
+    background-color: #dda43a;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+	.cont-header header ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cont-header header ul li a {
+        display: block;
+        padding: 10px;
+    }
+}
+.HOME{
+	background: linear-gradient(to top, rgba(30,35,38,0.3),rgba(30,35,38,0.3)),url(images/background.png);
+	background-size: cover;
+	height: 100vh;
+	color:#fff;
+	display: flex;
+	margin-top: 40px;
+}
+
+.HOME .Banner-content{
+	margin-top: 200px;
+	margin-left: 50px;
+	text-align:left;
+	line-height: 80px;
+	font-family: 'Spectral', serif;
+}
+.HOME .Banner-content h1{
+	font-size: 46px;
+	position: relative;
+}
+.HOME .Banner-content h2{
+	font-size: 26px;
+	font-weight: normal;
+	
+}
+#myButton {
+	background-color: #060606;
+	color: #e7ebdf;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ #myButton:hover {
+	background-color: #dda43a;
+ }
+
+.block {
+	background-color: #060606; 
+	padding: 40px; 
+  }
+  
+.block p {
+	font-size: 18px;
+	color: #dda43a;
+	margin: 0;
+	text-align: center;
+	font-family: 'Spectral', serif;
+  }
+
+.Aboutus{
+	background-color:#e7ebdf;
+	color:#060606;
+	padding: 30px 20px;
+	font-family: 'Spectral', serif;
+
+}
+.Aboutus .Content-Section{
+	max-width: 1100px;
+	margin: auto;
+}
+.Aboutus h2{
+	font-size: 48px;
+	text-align:center;
+	padding: 20px 0;
+}
+.Aboutus h3{
+	font-size: 24px;
+	text-align:center;
+	padding: 20px 0;
+}
+.Aboutus .Content-Section p{
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.picture-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.picture {
+    flex: 1;
+    max-width: 230px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .picture {
+        max-width: 230px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .picture {
+        max-width: 45%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .picture {
+        max-width: 90%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .picture {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+.Things {
+    background-color: #060606;
+    color: #e7ebdf;
+    padding: 30px 20px;
+    padding-bottom: 100px;
+	font-family: 'Spectral', serif;
+}
+
+.Things .Content-Section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Things h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Things .Exa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+	gap: 25px; 
+}
+
+.Things .Pro {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.Things .ImageOverlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Things .ImageOverlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.Things .OverlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e7ebdf;
+    color: #060606;
+    font-size: 24px;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+	text-align: center;
+}
+
+.Things .Pro:hover .ImageOverlay img {
+    transform: scale(1.1);
+}
+
+.Things .Pro:hover .OverlayText {
+    opacity: 1;
+}
+footer {
+	background-color: #e7ebdf; 
+	padding: 30px; 
+	text-align: center; 
+	color: #060606; 
+	font-family: 'Spectral', serif;
+	font-size: 18px;
+  }
+  
+.SocialNetworks{
+	text-align: center;
+}
+.SocialNetworks a{
+	color:#dda43a;
+	display:inline-block;
+	text-decoration: none;
+	border-radius: 100%;
+	width: 62px;
+	height: 62px;
+	line-height: 42px;
+	font-size: 30px;
+	transition: .3s;
+	text-align: center;
+}
+
+
+.Things .ImageOverlay img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .Things .ImageOverlay img:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .Things .ImageOverlay img:hover {
+        transform: scale(1.02); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .picture-block, .Things .Exa {
+        flex-direction: column;
+    }
+
+    .HOME .Banner-content, .Aboutus .Content-Section, .Things .Content-Section {
+        text-align: center;
+        margin: auto;
+    }
+
+    .HOME .Banner-content h1, .HOME .Banner-content h2 {
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cont-header header .logo a, .cont-header header nav ul li a {
+        font-size: 16px;
+    }
+
+    .Aboutus h2, .Things h2 {
+        font-size: 28px;
+    }
+
+    .picture, .Things .Pro {
+        width: 100%;
+    }
+}
